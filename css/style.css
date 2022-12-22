@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --Font-family-primary: 'Montserrat', sans-serif;
+  --Font-family-secondary: 'Fraunces', serif;
+  --Font-size: 14px;
+}
+
+body {
+  font-family: var(--Font-family-primary);
+  background-color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-weight: 500;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0; 
+}
+
+.card-text-area {
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-description {
+  color: var(--dark-grayish-blue);
+  
+}
+
+.card-title {
+  font-weight: 900;
+  font-family: var(--Font-family-secondary);
+}
+
+.card-paragraph {
+  color: var(--dark-grayish-blue);
+}
+
+.actual-price {
+  color: var(--dark-cyan);
+  font-size: 30px;
+  font-weight: 900;
+  font-family: var(--Font-family-secondary);
+  margin-bottom: 0 ;
+}
+
+.old-price {
+  color: var(--dark-grayish-blue);
+  position: absolute; 
+  font-size: 14px;
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.btn-add-to-cart {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  border-radius: 10px;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  font-family: var(--Font-family-primary);
+  font-weight: 700;
+  border: none;
+}
+
+.icon-cart {
+  background: url('../images/icon-cart.svg');
+  color: var(--white);
+  height: 16px;
+  width: 15px; 
+  display: inline-flex;
+  margin: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2vh;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
